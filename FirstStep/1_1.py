@@ -8,8 +8,6 @@ page = r.text
 count_c = page.count('C++')
 count_py = page.count('Python')
 
-# page.
-
 if count_c >= count_py:
     print('C++')
 else:
