@@ -2,7 +2,6 @@ import xlrd
 
 path = 'resource/salaries.xlsx'
 
-
 def get_medians(page):
     cities = {}
     for i in range(1,8):
@@ -20,7 +19,6 @@ def get_profs(page):
         sum = 0
         for j in range(1,8):
             sum += page.row_values(j)[i]
-        # cities[value] = city
         value = sum/7
         profs[value] = prof
     return profs
